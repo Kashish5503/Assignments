@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="indexStyle.css">
+    <title>
+        Esports Community Page
+    </title>
+    <link rel="icon" type="image/x-icon" href="Images/Zeher logo 16x16.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <body>
+        <header>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class="topnav">
+                <a href="Index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+
+                <a href="clips.html"><i class="fa fa-fw fa-play"></i>clips</a>
+
+                <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+
+            </div>
+        </header>
+        <h1>Welcome to our Home Page
+        </h1>
+        <br>
+        <hr>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="Images/valorant.jpg" style="width:100%">
+                <div class="text">Valorant</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="Images/PubG.jpg" style="width:100%">
+                <div class="text">PUBG</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="Images/thumb-082-rainbow-six-siege-7.jpg" style="width:100%">
+                <div class="text">Rainbow Six Siege</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="Images/DBD.jpg" style="width:100%">
+                <div class="text">DeadByDaylight</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="Images/CSGO.jpg" style="width:100%">
+                <div class="text">Counter-Strike Global Offensive</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <div class="fade-in-image">
+            <img src="Images/Valorant 2.jpg" alt="Valorant" width="500" height="300" style="float: right;">
+        </div>
+        <p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="fade-in-text"> Valorant is a free-to-play first-person hero shooter developed and published by Riot Games, for Microsoft Windows. First teased under the codename Project A in October 2019, the game began a closed beta period with limited access on April
+                7, 2020, followed by an official release on June 2, 2020.</div>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="fade-in-image1">
+            <img src="Images/PUBG 2.jpg" alt="PUBG" width="500" height="300" style="float: left;">
+        </div>
+        <p1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="fade-in-text1"> PUBG is a player versus player shooter game in which up to one hundred players fight in a battle royale, a type of large-scale last man standing deathmatch where players fight to remain the last alive. Players can choose to enter the match
+                solo, duo, or with a small team of up to four people.</div>
+        </p1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="fade-in-image2">
+            <img src="Images/R6 2.jpg" alt="Rainbow Six Siege" width="500" height="300" style="float: right;">
+        </div>
+        <p2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="fade-in-text2">Rainbow Six Siege is a high-precision, tactical shooter that prioritises careful planning teamwork and finely tuned tactical play. Tom Clancy's Rainbow Six Siege is an online tactical shooter video game developed by Ubisoft Montreal and published
+                by Ubisoft. </div>
+        </p2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="fade-in-image3">
+            <img src="Images/DBD 2.jpg" alt="Dead by Daylight" width="500" height="300" style="float: left;">
+        </div>
+        <p3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="fade-in-text3"> Dead by Daylight is an asymmetrical multiplayer horror game where one player takes on the role of a brutal Killer and the other four play as Survivors. As a Killer, your goal is to sacrifice as many Survivors as possible. As a Survivor, your
+                goal is to escape and avoid being caught and killed. </div>
+        </p3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="fade-in-image4">
+            <img src="Images/CSGO 2.jpg" alt="CSGO" width="500" height="300" style="float: right;">
+        </div>
+        <p4>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="fade-in-text4"> The game pits two teams, Terrorists and Counter-Terrorists, against each other in different objective-based game modes. The most common game modes involve the Terrorists planting a bomb while Counter-Terrorists attempt to stop them, or Counter-Terrorists
+                attempting to rescue hostages that the Terrorists have captured. </div>
+        </p4>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer>
+            <hr>
+            <br>
+            <a href="https://www.youtube.com/channel/UCBjnkoiJB2tmmBdg2Sp76yw" target="_blank">
+                <img src="Images/Youtube.jpg" alt="Youtube Link" width="30" height="30"> </a>
+            <a href="https://discord.gg/VQkGacvbmC" target="_blank">
+                <img src="Images/Discord.jpg " alt="Discord Link" width="30" height="30"> </a>
+            <br>
+        </footer>
+    </body>
+</head>
+
+</html>
