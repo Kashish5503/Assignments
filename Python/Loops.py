@@ -2,14 +2,16 @@
 
 from tkinter import N
 
-
+#Declaring variable
 a = "Bright IT Career"
+#using loop to print "Bright IT Career" 10 times
 for i in range(10):
     print(a)
 
 # Write a program to print 1 to 20 numbers using the while loop.
 
 i = 1
+#using loop to print 1 to 20 numbers
 while(i<=20):
     print(i)
     i+= 1 
